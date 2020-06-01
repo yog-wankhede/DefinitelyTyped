@@ -44,7 +44,7 @@ export interface SamlConfig {
     host?: string;
     entryPoint?: string;
     issuer?: string;
-    privateCert?: string;
+    privateCert?: string | any;
     cert?: string | string[] | CertCallback;
     decryptionPvk?: string;
     signatureAlgorithm?: 'sha1' | 'sha256' | 'sha512';
